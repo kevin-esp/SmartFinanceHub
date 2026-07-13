@@ -1,0 +1,127 @@
+/* ================= GLOBAL ================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:#f4f6f8;
+
+    color:#333;
+
+    line-height:1.8;
+
+}
+
+/* ================= HEADER ================= */
+
+header{
+
+    background:#0f4c81;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+header h1{
+
+    font-size:40px;
+
+}
+
+.tagline{
+
+    font-size:20px;
+
+    font-weight:600;
+
+    margin-top:10px;
+
+}
+
+.subtitle{
+
+    font-size:16px;
+
+    margin-top:8px;
+
+    opacity:.9;
+
+}
+
+/* ================= MAIN ================= */
+
+main{
+
+    width:90%;
+
+    max-width:1000px;
+
+    margin:40px auto;
+
+}
+
+section{
+
+    background:white;
+
+    padding:25px;
+
+    margin-bottom:25px;
+
+    border-radius:10px;
+
+    box-shadow:0 2px 8px rgba(0,0,0,.15);
+
+}
+
+h2{
+
+    color:#0f4c81;
+
+    margin-bottom:15px;
+
+}
+
+p{
+
+    margin-bottom:15px;
+
+}
+
+ul{
+
+    margin-left:25px;
+
+}
+
+li{
+
+    margin-bottom:10px;
+
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+
+    background:#0f4c81;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+
+}

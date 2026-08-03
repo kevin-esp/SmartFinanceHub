@@ -20,8 +20,9 @@ header{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    flex-wrap:wrap;
 
-    padding:20px 60px;
+    padding:20px 40px;
 
     background:#0f4c81;
     color:white;
@@ -40,11 +41,28 @@ header{
 
 }
 
+nav{
+
+    margin-top:10px;
+
+}
+
 nav ul{
 
     display:flex;
+    flex-wrap:wrap;
+    justify-content:flex-end;
+    align-items:center;
+
     list-style:none;
-    gap:25px;
+
+    gap:15px;
+
+}
+
+nav li{
+
+    list-style:none;
 
 }
 
@@ -53,6 +71,9 @@ nav a{
     color:white;
     text-decoration:none;
     font-weight:bold;
+    font-size:15px;
+
+    transition:.2s;
 
 }
 
@@ -107,6 +128,15 @@ nav a:hover{
 
     cursor:pointer;
 
+    background:#0f4c81;
+    color:white;
+
+}
+
+.hero-buttons button:hover{
+
+    background:#0c3b64;
+
 }
 
 /* ================= TOPICS ================= */
@@ -140,7 +170,7 @@ nav a:hover{
 .topic-grid{
 
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 
     gap:30px;
 
@@ -184,6 +214,7 @@ nav a:hover{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    flex-wrap:wrap;
 
     gap:60px;
 
@@ -192,12 +223,14 @@ nav a:hover{
 .calculator-text{
 
     flex:1;
+    min-width:300px;
 
 }
 
 .calculator-preview{
 
     flex:1;
+    min-width:300px;
 
 }
 
@@ -263,6 +296,69 @@ nav a:hover{
 
 }
 
+/* ================= FORMS ================= */
+
+form{
+
+    max-width:700px;
+    margin:60px auto;
+    background:white;
+    padding:40px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.1);
+
+}
+
+form label{
+
+    display:block;
+    margin-top:20px;
+    margin-bottom:8px;
+    font-weight:bold;
+
+}
+
+form input,
+form textarea,
+form select{
+
+    width:100%;
+    padding:10px;
+    font-size:16px;
+
+}
+
+form input[type="radio"],
+form input[type="checkbox"]{
+
+    width:auto;
+    margin-right:8px;
+
+}
+
+form input[type="submit"],
+form input[type="reset"]{
+
+    width:auto;
+    margin-top:20px;
+    margin-right:10px;
+    padding:12px 24px;
+
+    background:#0f4c81;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+
+}
+
+form input[type="submit"]:hover,
+form input[type="reset"]:hover{
+
+    background:#0c3b64;
+
+}
+
 /* ================= FOOTER ================= */
 
 footer{
@@ -286,5 +382,30 @@ footer{
 .footer-content p{
 
     margin:10px 0;
+
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    header{
+
+        flex-direction:column;
+        text-align:center;
+
+    }
+
+    nav ul{
+
+        justify-content:center;
+
+    }
+
+    .hero h2{
+
+        font-size:36px;
+
+    }
 
 }
